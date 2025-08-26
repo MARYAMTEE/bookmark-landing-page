@@ -1,10 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
-button{
-    display: block;
+@theme {
+    --font-display: "Rubik", sans-serif;
 }
 
+/* button{
+    @apply block;
+} */
+
 img{
-    display: block;
-    max-width: 100%;
+    @apply block max-w-full;
+}
+
+.nav__menu.toggle{
+    @apply right-0;
+}
+
+.nav__item{
+    @apply py-4 border-t uppercase border-gray-50;
+}
+
+.nav__link{
+    @apply text-lg tracking-widest text-gray-50;
+}
+
+@media (min-width: 768px) {
+    .nav__item{
+        @apply border-t-0 py-0;
+    }
+
+    .nav__link{
+        @apply text-sm text-blue-950;
+    }
 }
