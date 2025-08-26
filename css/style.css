@@ -22,7 +22,11 @@ img{
 }
 
 .nav__link{
-    @apply text-lg tracking-widest text-gray-50;
+    @apply text-lg tracking-widest transition duration-300 motion-reduce:transition-none text-gray-50;
+}
+
+.nav__link:hover{
+    @apply text-red-400;
 }
 
 @media (min-width: 768px) {
