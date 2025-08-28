@@ -12,9 +12,9 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-gray-50 px-8 pt-10 font-display">
+<body class="bg-gray-50 pt-10 font-display">
     <header>
-        <div class="relative md:flex md:justify-between md:items-center">
+        <div class="relative px-8 md:flex md:justify-between md:items-center">
             <div class="flex justify-between md:inline-block">
                 <img src="./images/logo-bookmark.svg" alt="Logo image" />
                 <button type="button" aria-label="Hamburger Icon" class="open__menu md:hidden">
@@ -22,7 +22,7 @@
                 </button>
             </div>
     
-            <nav class="nav__menu bg-blue-950 h-dvh w-full px-8 pt-10 fixed top-0 -right-full z-10 md:relative md:right-0 md:pt-0 md:px-0 md:h-auto md:w-auto md:bg-transparent" aria-label="Primary">
+            <nav class="nav__menu bg-blue-950 h-dvh w-full px-8 pt-10 fixed top-0 -right-full z-50 md:relative md:right-0 md:pt-0 md:px-0 md:h-auto md:w-auto md:bg-transparent" aria-label="Primary">
                 <div class="flex justify-between mb-10 md:hidden">
                     <img src="./images/logo-bookmark-2.svg" alt="Logo image for mobile nav">
     
@@ -45,5 +45,28 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="py-16 text-center md:text-left md:flex md:gap-6 lg:gap-16 justify-between md:flex-row-reverse">
+            <div class="relative px-2 md:flex-1 overflow-hidden">
+                <div class="absolute top-[20%] right-[-60%] w-[140%] h-[70%] bg-blue-600 rounded-l-full -z-10"></div>
+
+                <div class="mb-10 relative z-10">
+                    <img src="./images/illustration-hero.svg" class="w-full mx-auto" alt="Hero image of television" loading="lazy" decoding="async">
+                </div>
+            </div>
+    
+            <div class="px-8 mt-5 md:flex-1">
+                <h1 class="text-3xl font-medium text-gray-800 mb-4 relative z-10 leading-11">A Simple Bookmark Manager</h1>
+                <p class="text-gray-500 leading-relaxed mb-8 relative z-10">A clean and simple interface to organize your favourite websites. Open a new 
+                browser tab and see your sites load instantly. Try it for free.</p>
+    
+                <div class="flex gap-4 items-center relative z-10">
+                    <a href="#" class="bg-blue-600 text-white px-3 py-3.5 rounded-md shadow-md hover:bg-blue-700 transition">Get it on Chrome</a>
+                    <a href="#" class="bg-gray-100 text-gray-700 px-3 py-3.5 rounded-md shadow-md hover:bg-gray-200 transition">Get it on Firefox</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
