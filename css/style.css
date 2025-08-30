@@ -4,13 +4,12 @@
 @theme {
     --font-display: "Rubik", sans-serif;
 }
-
 /* button{
     @apply block;
 } */
 
 img{
-    @apply block max-w-full;
+    
 }
 
 .nav__menu.toggle{
