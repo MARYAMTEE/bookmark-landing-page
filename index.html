@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark landing page</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/output.css">
+    <!-- javaScript -->
+     <script src="./js/script.js" defer></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 pt-10 font-display">
+    <header>
+        <div class="relative px-8 sm:px-10 lg:px-20 md:flex md:justify-between md:items-center">
+            <div class="flex justify-between md:inline-block">
+                <img src="./images/logo-bookmark.svg" alt="Logo image" />
+                <button type="button" aria-label="Hamburger Icon" class="open__menu md:hidden">
+                    <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+    
+            <nav class="nav__menu bg-blue-950 h-dvh w-full px-8 pt-10 fixed top-0 -right-full z-50 md:relative md:right-0 md:pt-0 md:px-0 md:h-auto md:w-auto md:bg-transparent" aria-label="Primary">
+                <div class="flex justify-between mb-10 md:hidden">
+                    <img src="./images/logo-bookmark-2.svg" alt="Logo image for mobile nav">
+    
+                    <button type="button" aria-label="Close icon">
+                        <img src="./images/icon-close.svg" class="close__nav" alt="" aria-hidden="true">
+                    </button>
+                </div>
+    
+                <ul class="nav__list text-center md:flex md:items-center md:gap-10">
+                    <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+                    <li class="nav__item border-b md:border-b-0"><a href="#" class="nav__link">Contact</a></li>
+                    <button type="button"  class="text-gray-50 border-2 border-gray-50 mt-6 w-full py-2 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-red-400 hover:py-1.5 transition duration-300 motion-reduce:transition-none hover:border-2 hover:border-red-400 md:mt-0 md:bg-red-400 md:w-auto md:px-8 md:shadow-xl md:border-0 md:hover:px-7.5">Login</button>
+                </ul>
+
+                <ul class="flex gap-8 justify-center md:hidden absolute bottom-10 left-1/2 -translate-1/2">
+                    <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
+                    <li><img src="./images/icon-twitter.svg" alt="twitter icon"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative py-16 text-center sm:px-4 lg:px-20  lg:py-24 sm:text-left sm:flex sm:justify-between lg:gap-16 sm:items-center sm:flex-row-reverse mx-auto">
+            <div class="relative px-2 sm:px-0 sm:flex-1 overflow-hidden">
+
+                <div class="mb-10 relative z-10 sm:mb-0">
+                    <img src="./images/illustration-hero.svg" class="w-78 max-w-md mx-auto sm:max-w-full" alt="Hero image of television" loading="lazy" decoding="async">
+                </div>
+            </div>
+    
+            <div class="absolute top-[17%] right-0 w-[80%] h-[27%] bg-blue-600 rounded-l-full -z-10 max-w-100 sm:w-[35%] sm:h-[45%] md:h-[55%] sm:top-[35%]"></div>
+
+            <div class="px-8 mt-5 w-full max-w-120 m-auto sm:flex-1 sm:px-0">
+                <h1 class="text-3xl md:text-4xl lg:text-[2.7rem] font-medium text-gray-800 mb-4 relative z-10 md:max-w-md leading-snug sm:leading-none lg:leading-12">A Simple Bookmark Manager</h1>
+                <p class="text-gray-500 leading-relaxed mb-8 relative z-10 md:max-w-md">A clean and simple interface to organize your favourite websites. Open a new 
+                browser tab and see your sites load instantly. Try it for free.</p>
+    
+                <div class="flex items-center justify-center gap-4 sm:gap-3 sm:justify-start relative z-10">
+                    <a href="#" class="bg-blue-600 text-white px-3 py-3.5 rounded-md shadow-md hover:bg-blue-700 transition">Get it on Chrome</a>
+                    <a href="#" class="bg-gray-100 text-gray-700 px-3 py-3.5 rounded-md shadow-md hover:bg-gray-200 transition">Get it on Firefox</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative px-8 py-16 sm:px-4 lg:px-20">
+            <div class="text-center max-w-120 mx-auto">
+                <h2 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Features</h2>
+                <p class="text-gray-500 leading-relaxed z-10">Our aim is to make it quick and easy for you to access your favourite websites. 
+                    Your bookmarks sync between your devices so you can access them on the go.
+                </p>
+            </div>
+
+            <div class="absolute top-[54%] left-0 w-[80%] max-w-100 h-[20%] bg-blue-600 rounded-r-full -z-10 sm:w-[65%] sm:max-w-full sm:top-[45%] sm:h-[23%] md:top-[63%] md:w-[40%] md:h-[35%]"></div> 
+
+            <div>
+                <div class="tabs mt-10">
+                    <button class="tab active" data-tab="1">Simple Bookmarking</button>
+                    <button class="tab" data-tab="2">Speedy Searching</button>
+                    <button class="tab border-b border-gray-300 sm:border-b-0" data-tab="3">Easy Sharing</button>
+                </div>
+
+                <div class="tab__content mt-20 sm:mt-16 active" data-content="1">
+                    <div class="sm:flex-1">
+                        <img src="./images/illustration-features-tab-1.svg" class="m-auto w-78 sm:w-80 lg:w-96" alt="Bookmark in one click" loading="lazy" decoding="async">
+                    </div>
+                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-24 sm:flex-1 md:text-left md:max-w-96 md:mt-0">
+                        <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Bookmark in one click</h3>
+                        <p class="text-gray-500 leading-relaxed">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        gives you complete control over how you manage your favourite sites.</p>
+                        <button type="button" class="hidden sm:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
+                    </div>
+                </div>
+    
+                <div class="tab__content mt-20 sm:mt-16" data-content="2">
+                    <div class="sm:flex-1">
+                        <img src="./images/illustration-features-tab-2.svg" class="m-auto w-78 sm:w-80 lg:w-96" alt="Intelligent search" loading="lazy" decoding="async">
+                    </div>
+                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-24 sm:flex-1 md:text-left md:max-w-96 md:mt-0">
+                        <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Intelligent search</h3>
+                        <p class="text-gray-500 leading-relaxed">Our powerful search feature will help you find saved sites in no time at all. 
+                        No need to trawl through all of your bookmarks.</p>
+                        <button type="button" class="hidden sm:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
+                    </div>
+                </div>
+    
+                <div class="tab__content mt-20 sm:mt-16" data-content="3">
+                    <div class="sm:flex-1">
+                        <img src="./images/illustration-features-tab-3.svg" class="m-auto w-78 sm:w-80 lg:w-96" alt="Share your bookmarks" loading="lazy" decoding="async">
+                    </div>
+                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-24 sm:flex-1 md:text-left md:max-w-96 md:mt-0">
+                        <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Share your bookmarks</h3>
+                        <p class="text-gray-500 leading-relaxed">Easily share your bookmarks and collections with others. Create a shareable 
+                        link that you can send at the click of a button.</p>
+                        <button type="button" class="hidden sm:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-8 py-16">
+             <div class="text-center max-w-120 m-auto sm:flex-1 md:text-left md:max-w-96">
+                <h3 class="text-gray-800 text-[1.4rem]  font-medium mb-2 sm:text-[1.8rem]">Download the extension</h3>
+                <p class="text-gray-500 leading-relaxed">We've got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you'd like us to prioritize.
+                </p>
+            </div>
+
+            <div class="">
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+                    <img src="./images/logo-chrome.svg" class="mx-auto" alt="Logo of Chrome" loading="lazy" decoding="async">
+                    <div class="my-8">
+                        <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Chrome</h4>
+                        <p class="text-sm text-gray-500 mt-1">Minimum version 62</p>
+                    </div>
+
+                    <img src="./images/bg-dots.svg" class="w-full" alt="Dotted line" loading="lazy" decoding="async">
+
+                    <div class="px-6 mt-6">
+                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-sm">Add & Install Extension</button>
+                    </div>
+                </div>
+
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+                    <img src="./images/logo-firefox.svg" class="mx-auto" alt="Logo of Firefox" loading="lazy" decoding="async">
+                    <div class="my-8">
+                        <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Firefox</h4>
+                        <p class="text-sm text-gray-500 mt-1">Minimum version 55</p>
+                    </div>
+
+                    <img src="./images/bg-dots.svg" class="w-full" alt="Dotted line" loading="lazy" decoding="async">
+                    
+                    <div class="px-6 mt-6">
+                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-sm">Add & Install Extension</button>
+                    </div>
+                </div>
+
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+                    <img src="./images/logo-opera.svg" class="mx-auto" alt="Logo of Opera" loading="lazy" decoding="async">
+                    <div class="my-8">
+                        <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Opera</h4>
+                        <p class="text-sm text-gray-500 mt-1">Minimum version 46</p>
+                    </div>
+
+                    <img src="./images/bg-dots.svg" class="w-full" alt="Dotted line" loading="lazy" decoding="async">
+                    
+                    <div class="px-6 mt-6">
+                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-sm">Add & Install Extension</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

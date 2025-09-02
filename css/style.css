@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Rubik", sans-serif;
+}
+/* button{
+    @apply block;
+} */
+
+img{
+    @apply block;
+}
+
+.nav__menu.toggle{
+    @apply right-0;
+}
+
+.nav__item{
+    @apply py-4 border-t uppercase border-gray-500;
+}
+
+.nav__link{
+    @apply text-lg tracking-widest transition duration-300 motion-reduce:transition-none text-gray-50;
+}
+
+.nav__link:hover{
+    @apply text-red-500;
+}
+
+@media (min-width: 768px) {
+    .nav__item{
+        @apply border-t-0 py-0;
+    }
+
+    .nav__link{
+        @apply text-sm text-blue-950;
+    }
+}
+
+/* Features tab */
+.tab{
+    @apply relative border-t border-gray-300 py-4.5 text-gray-500 text-xl transition;
+}
+
+.tab.focus{
+    @apply border-0 outline-0;
+}
+
+.tab::after{
+    @apply absolute content-[""] bottom-0 w-36 -translate-x-1/2 left-1/2 h-1 bg-transparent;
+}
+
+.tab.active{
+    @apply text-gray-700;
+}
+.tab.active::after{
+    @apply bg-red-600;
+}
+
+.tabs{
+    @apply flex flex-col;
+}
+
+.tab__content{
+    @apply hidden;
+}
+
+.tab__content.active{
+    @apply block;
+}
+
+@media (min-width: 640px){
+    .tab{
+        @apply border-t-0 text-lg;
+    }
+
+    .tab::after{
+        @apply w-full;
+    }
+
+    .tabs{
+        @apply flex-row justify-between items-center border-b border-gray-300 w-[80%] m-auto mt-10;
+    }
+}
+
+@media (min-width: 768px){
+    .tab__content.active{
+        @apply flex justify-center items-center;
+    }
+}
