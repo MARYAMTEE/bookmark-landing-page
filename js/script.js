@@ -37,3 +37,27 @@ tabs.forEach(tab => {
         matchingContent.classList.add("active");
     })
 });
+
+// Accordion
+const btns = document.querySelectorAll(".arrowBtn");
+
+btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btns.forEach(b => { b.classList.remove("active")});
+        btn.classList.add("active");
+
+        const accordionContainer = btn.closest(".accordion__container");
+        const accordion = accordionContainer.querySelector(".accordion");
+        const arrow = btn.querySelector(".arrow__icon");
+        const isOpen = accordion.classList.toggle("toggle");
+
+        arrow.classList.toggle("fa-angle-down");
+        arrow.classList.toggle("fa-angle-up");
+
+        if(isOpen) {
+            btn.classList.add("active")
+        } else {
+            btn.classList.remove("active");
+        }
+    });
+});

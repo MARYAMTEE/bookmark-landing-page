@@ -89,3 +89,11 @@ img{
         @apply flex justify-center items-center;
     }
 }
+
+.accordion{
+    display: none;
+}
+
+.accordion.toggle{
+    display: block;
+}

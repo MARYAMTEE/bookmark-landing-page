@@ -125,15 +125,15 @@
         </section>
 
         <section class="px-8 py-16">
-             <div class="text-center max-w-120 m-auto sm:flex-1 md:text-left md:max-w-96">
+             <div class="text-center max-w-120 m-auto sm:flex-1">
                 <h3 class="text-gray-800 text-[1.4rem]  font-medium mb-2 sm:text-[1.8rem]">Download the extension</h3>
-                <p class="text-gray-500 leading-relaxed">We've got more browsers in the pipeline. Please do let us know if you’ve 
+                <p class="text-gray-500 leading-relaxed">We've got more browsers in the pipeline. Please do let us know if you've 
                     got a favourite you'd like us to prioritize.
                 </p>
             </div>
 
-            <div class="">
-                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+            <div class="grid place-items-center mx-auto w-full sm:grid-cols-2 sm:max-w-150 lg:grid-cols-3 lg:max-w-230">
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl mx-auto my-10 sm:mb-0 lg:my-0">
                     <img src="./images/logo-chrome.svg" class="mx-auto" alt="Logo of Chrome" loading="lazy" decoding="async">
                     <div class="my-8">
                         <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Chrome</h4>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl mx-auto my-10 sm:mb-0 lg:my-0 lg:mt-20">
                     <img src="./images/logo-firefox.svg" class="mx-auto" alt="Logo of Firefox" loading="lazy" decoding="async">
                     <div class="my-8">
                         <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Firefox</h4>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl m-auto my-10">
+                <div class="shadow-xl pt-10 pb-6 text-center w-68 rounded-xl mx-auto my-10 lg:my-0 lg:mt-40">
                     <img src="./images/logo-opera.svg" class="mx-auto" alt="Logo of Opera" loading="lazy" decoding="async">
                     <div class="my-8">
                         <h4 class="text-[1.2rem] text-gray-800 font-medium tracking-wide">Add to Opera</h4>
@@ -176,6 +176,82 @@
                 </div>
             </div>
 
+        </section>
+
+        <section class="px-8 py-16">
+             <div class="text-center max-w-120 m-auto sm:flex-1">
+                <h3 class="text-gray-800 text-[1.4rem]  font-medium mb-2 sm:text-[1.8rem]">Frequently Asked Questions</h3>
+                <p class="text-gray-500 leading-relaxed">Here are some of our FAQs. If you have any other questions you'd like 
+                    answered please feel free to email us.
+                </p>
+            </div>
+
+            <div class="mx-auto">
+                <div class="accordion__container">
+                    <div class="flex justify-between items-center">
+                        <p>What is Bookmark?</p>
+                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                            <i class="fa-solid fa-angle-down arrow__icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="accordion">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__container">
+                    <div class="flex justify-between items-center">
+                        <p>How can I request a new browser?</p>
+                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                            <i class="fa-solid fa-angle-down arrow__icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="accordion">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__container">
+                    <div class="flex justify-between items-center">
+                        <p>Is there a mobile app?</p>
+                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                            <i class="fa-solid fa-angle-down arrow__icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="accordion">
+                        <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                            sollicitudin ex et ultricies bibendum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__container">
+                    <div class="flex justify-between items-center">
+                        <p>What about other Chromium browsers?</p>
+                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                            <i class="fa-solid fa-angle-down arrow__icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="accordion">
+                        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                            vitae neque eget nisl gravida pellentesque non ut velit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button">More Info</button>
         </section>
     </main>
 </body>
