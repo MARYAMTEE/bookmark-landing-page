@@ -97,3 +97,7 @@ img{
 .accordion.toggle{
     display: block;
 }
+
+.fa-angle-up{
+    @apply text-red-600
+}
