@@ -49,15 +49,15 @@
     </header>
 
     <main>
-        <section class="hero pt-[4rem] pb-[4rem] overflow-hidden px-4 md:px-10 lg:pt-[2.5rem] lg:mb-0 lg:pb-[2.5rem] md:flex md:flex-row-reverse md:items-center md:justify-center lg:px-14">
+        <section class="hero pt-[4rem] pb-[4rem] overflow-hidden px-4 md:px-10 lg:pt-[2.5rem] lg:mb-0 lg:pb-[3.5rem] md:flex md:flex-row-reverse md:items-center md:justify-center lg:px-14 lg:max-w-[80rem] mx-auto">
             <div class="hero__illustration md:flex-1 before:bg-blue-600 before:-z-10 before:rounded-l-full"></div>
 
-            <div class="py-8 mt-5 w-full max-w-120 mx-auto text-center md:text-left md:flex-1">
+            <div class="py-8 mt-5 w-full max-w-120 mx-auto text-center md:text-left md:flex-1 md:mx-0">
                 <h1 class="text-3xl md:text-[2rem] lg:text-[2.7rem] font-medium text-gray-800 mb-4 relative z-10 leading-snug sm:leading-none lg:leading-12">A Simple Bookmark Manager</h1>
                 <p class="text-gray-500 leading-relaxed mb-8 relative z-10 md:max-w-md">A clean and simple interface to organize your favourite websites. Open a new 
                 browser tab and see your sites load instantly. Try it for free.</p>
     
-                <div class="flex items-center justify-center gap-4 md:gap-3 md:justify-start relative z-10">
+                <div class="flex items-center justify-center gap-4 md:gap-3 md:justify-start  relative z-10">
                     <a href="#" class="bg-blue-600 text-white px-3 py-3.5 rounded-md shadow-md hover:bg-blue-700 transition">Get it on Chrome</a>
                     <a href="#" class="bg-gray-100 text-gray-700 px-3 py-3.5 rounded-md shadow-md hover:bg-gray-200 transition">Get it on Firefox</a>
                 </div>
@@ -258,10 +258,16 @@
                 <p class="text-[0.75rem] uppercase tracking-[0.4em]">35,000+ already joined</p>
                 <h3 class="font-medium text-2xl my-3 mx-auto max-w-[25rem] md:my-5 :md:text-3xl">Stay up-to-date with what we're doing</h3>
                 
-                <div class="grid gap-4 mt-8">
-                    <input class="bg-gray-50 text-gray-500 py-4 rounded px-5 focus:outline-0 text-" type="email" id="email" placeholder="Enter your email address">
-                    <button type="button" class="bg-red-500 text- text-gray-50 py-4 tracking-wide w-full rounded">Contact Us</button>
-                </div>
+                <form action="" id="form" novalidate>
+                    <div class="grid gap-4 mt-8">
+                        <div>
+                            <input class="bg-gray-50 text-gray-500 py-4 rounded px-5 focus:outline-0 text-sm w-full data-[invalid=true]:border-2 border-red-500 data-[invalid=true]:bg-[url('/images/icon-error.svg')] data-[invalid=true]:bg-no-repeat data-[invalid=true]:bg-[length-20px] data-[invalid=true]:bg-[position:calc(100%-14px)_center] pr-12" type="email" id="email" placeholder="Enter your email address" aria-describedby="error-message" aria-invalid="false">
+                            <p class="hidden rounded-b-md bg-red-500 px-3 py-2 text-[0.75rem] text-gray-50 italic text-start data-[show=true]:block" id="error-message">Whoops, make sure it's an email</p>
+                        </div>
+                        <button type="submit" class="bg-red-500 text- text-gray-50 py-4 tracking-wide w-full rounded">Contact Us</button>
+                    </div>
+
+                </form>
             </div>
         </section>
     </main>

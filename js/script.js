@@ -61,3 +61,24 @@ btns.forEach(btn => {
         }
     });
 });
+
+// Form error
+const form = document.querySelector("#form");
+const input = document.querySelector("#email");
+const errorMessage = document.querySelector("#error-message");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+    input.dataset.invalid = (!valid).toString();
+    input.setAttribute("aria-invalid", (!valid).toString());
+    errorMessage.dataset.show = (!valid).toString();
+
+    if(valid){
+        form.reset();
+        input.dataset.invalid = "false";
+        input.setAttribute("aria-invalid", "false");
+        errorMessage.dataset.show = "false";
+    }
+});

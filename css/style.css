@@ -132,7 +132,7 @@ img{
         }
 
         .hero__illustration::before{
-            top: clamp(158px, 4vw, 80px);
+            top: clamp(158px,4vw,80px);
             left: 13vw;
             height: 23vw;
         }
@@ -140,8 +140,8 @@ img{
         .hero__illustration::after{
             position: absolute;
             content: "";
-            top: 100px;
-            left: 11px;
+            top: 6.25rem;
+            left: 0.6875rem;
             background-image: url('/images/illustration-hero.svg');
             background-size: 100%;
             background-repeat: no-repeat;
@@ -155,7 +155,7 @@ img{
             }
 
             .hero__illustration::after{
-                top: 65px;
+                top: 4.0625rem;
             }
         }
     }
