@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-50 pt-10 font-display text-[1rem]">
-    <header>
-        <div class="relative px-8 :px-10 lg:px-20 md:flex md:justify-between md:items-center">
+    <header class="max-w-[81rem] mx-auto">
+        <div class="relative px-8 lg:px-20 md:flex md:justify-between md:items-center">
             <div class="flex justify-between md:inline-block">
                 <img src="./images/logo-bookmark.svg" alt="Logo image" />
                 <button type="button" aria-label="Hamburger Icon" class="open__menu md:hidden">
@@ -36,7 +36,7 @@
                         <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
                         <li class="nav__item border-b md:border-b-0"><a href="#" class="nav__link">Contact</a></li>
-                        <button type="button"  class="text-gray-50 border-2 border-gray-50 mt-6 w-full py-2 rounded- uppercase tracking-widest hover:bg-transparent hover:text-red-400 hover:py-1.5 transition duration-300 motion-reduce:transition-none hover:border-2 hover:border-red-400 md:mt-0 md:bg-red-400 md:w-auto md:px-8 md:shadow-xl md:border-0 md:hover:px-7.5">Login</button>
+                        <button type="button"  class="text-gray-50 border-2 border-gray-50 mt-6 w-full py-2 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-red-400 hover:py-1.5 transition duration-300 motion-reduce:transition-none hover:border-2 hover:border-red-400 md:mt-0 md:bg-red-400 md:w-auto md:px-8 md:shadow-xl md:border-0 md:hover:px-7.5">Login</button>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@
     </header>
 
     <main>
-        <section class="hero pt-[4rem] pb-[4rem] overflow-hidden px-4 md:px-10 lg:pt-[2.5rem] lg:mb-0 lg:pb-[3.5rem] md:flex md:flex-row-reverse md:items-center md:justify-center lg:px-14 lg:max-w-[80rem] mx-auto">
+        <section class="hero pt-[4rem] pb-[4rem] overflow-hidden px-4 md:px-10 lg:pt-[2.5rem] lg:mb-0 lg:pb-[3.5rem] md:flex md:flex-row-reverse md:items-center md:justify-center lg:px-14 lg:max-w-[81rem] mx-auto">
             <div class="hero__illustration md:flex-1 before:bg-blue-600 before:-z-10 before:rounded-l-full"></div>
 
             <div class="py-8 mt-5 w-full max-w-120 mx-auto text-center md:text-left md:flex-1 md:mx-0">
@@ -82,40 +82,40 @@
                 </div>
 
                 <div class="tab__content mt-20 active" data-content="1">
-                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:flex-1">
+                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:basis-1/2">
                         <img src="./images/illustration-features-tab-1.svg" class="m-auto z-10" alt="Bookmark in one click" loading="lazy" decoding="async">
                     </div>
 
-                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-28 md:text-left md:max-w-96 md:mt-0 md:flex-1">
+                    <div class="mt-24 text-center max-w-120 mx-auto sm:mt-28 md:mx-0 md:text-left md:mt-0 md:basis-1/2">
                         <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Bookmark in one click</h3>
-                        <p class="text-gray-500 leading-relaxed">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        <p class="text-gray-500 leading-relaxed max-w-[25rem]">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                         gives you complete control over how you manage your favourite sites.</p>
-                        <button type="button" class="hidden :inline-block bg-blue-600 text-gray-50 py-3 px-6 text- rounded- mt-4">More Info</button>
+                        <button type="button" class="hidden md:inline-block bg-blue-600 text-gray-50 py-3 px-6 text- rounded-sm mt-4">More Info</button>
                     </div>
                 </div>
     
                 <div class="tab__content mt-20" data-content="2">
-                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:flex-1">
+                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:basis-1/2">
                         <img src="./images/illustration-features-tab-2.svg" class="m-auto z-10" alt="Intelligent search" loading="lazy" decoding="async">
                     </div>
                     
-                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-28 md:text-left md:max-w-96 md:mt-0 md:flex-1">
+                    <div class="mt-24 text-center max-w-120 mx-auto sm:mt-28 md:mx-0 md:text-left md:mt-0 md:basis-1/2">
                         <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Intelligent search</h3>
-                        <p class="text-gray-500 leading-relaxed">Our powerful search feature will help you find saved sites in no time at all. 
+                        <p class="text-gray-500 leading-relaxed max-w-[25rem]">Our powerful search feature will help you find saved sites in no time at all. 
                         No need to trawl through all of your bookmarks.</p>
                         <button type="button" class="hidden md:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
                     </div>
                 </div>
     
                 <div class="tab__content mt-20" data-content="3">
-                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:flex-1">
+                    <div class="features__tab before:rounded-r-full before:bg-blue-600 md:basis-1/2">
                         <img src="./images/illustration-features-tab-3.svg" class="m-auto" alt="Share your bookmarks" loading="lazy" decoding="async">
                     </div>
-                    <div class="mt-24 text-center max-w-120 m-auto sm:mt-28 md:text-left md:max-w-96 md:mt-0 md:flex-1">
+                    <div class="mt-24 text-center max-w-120 mx-auto sm:mt-28 md:mx-0 md:text-left md:mt-0 md:basis-1/2">
                         <h3 class="text-gray-800 text-[1.4rem] sm:text-[1.8rem] font-medium mb-2">Share your bookmarks</h3>
-                        <p class="text-gray-500 leading-relaxed">Easily share your bookmarks and collections with others. Create a shareable 
+                        <p class="text-gray-500 leading-relaxed max-w-[25rem]">Easily share your bookmarks and collections with others. Create a shareable 
                         link that you can send at the click of a button.</p>
-                        <button type="button" class="hidden sm:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
+                        <button type="button" class="hidden md:inline-block bg-blue-600 text-gray-50 py-3 px-6 text-sm rounded-sm mt-4">More Info</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <img src="./images/bg-dots.svg" class="w-full" alt="Dotted line" loading="lazy" decoding="async">
 
                     <div class="px-6 mt-6">
-                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-">Add & Install Extension</button>
+                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-sm">Add & Install Extension</button>
                     </div>
                 </div>
 
@@ -154,7 +154,7 @@
                     <img src="./images/bg-dots.svg" class="w-full" alt="Dotted line" loading="lazy" decoding="async">
                     
                     <div class="px-6 mt-6">
-                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-">Add & Install Extension</button>
+                        <button type="button" class="bg-blue-600 text-gray-50 w-[100%] py-3 rounded-sm">Add & Install Extension</button>
                     </div>
                 </div>
 
@@ -187,8 +187,8 @@
                 <div class="accordion__container border-b border-gray-300">
                     <div class="flex justify-between items-center py-5">
                         <p class="text-gray-800">What is Bookmark?</p>
-                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
-                            <i class="fa-solid arrow__icon text-blue-600 text-xl" aria-hidden="true"></i>
+                        <button type="button" class="arrowBtn focus:none focus:outline-none" aria-label="Arrow icon">
+                            <i class="fa-solid fa-angle-down arrow__icon text-blue-600 text-xl" aria-hidden="true"></i>
                         </button>
                     </div>
 
@@ -202,7 +202,7 @@
                 <div class="accordion__container border-b border-gray-300">
                     <div class="flex justify-between items-center py-5">
                         <p class="text-gray-800">How can I request a new browser?</p>
-                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                        <button type="button" class="arrowBtn focus:none focus:outline-none" aria-label="Arrow icon">
                             <i class="fa-solid fa-angle-down arrow__icon text-blue-600 text-xl" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -219,7 +219,7 @@
                 <div class="accordion__container border-b border-gray-300 ">
                     <div class="flex justify-between items-center py-5">
                         <p class="text-gray-800">Is there a mobile app?</p>
-                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                        <button type="button" class="arrowBtn focus:none focus:outline-none" aria-label="Arrow icon">
                             <i class="fa-solid fa-angle-down arrow__icon text-blue-600 text-xl" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -235,7 +235,7 @@
                 <div class="accordion__container border-b border-gray-300 ">
                     <div class="flex justify-between items-center py-5">
                         <p class="text-gray-800">What about other Chromium browsers?</p>
-                        <button type="button" class="arrowBtn" aria-label="Arrow icon">
+                        <button type="button" class="arrowBtn focus:none focus:outline-none" aria-label="Arrow icon">
                             <i class="fa-solid fa-angle-down arrow__icon text-blue-600 text-xl" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -261,10 +261,10 @@
                 <form action="" id="form" novalidate>
                     <div class="grid gap-4 mt-8 md:grid-cols-[2fr_1fr] items-start">
                         <div>
-                            <input class="bg-gray-50 text-gray-500 py-5 rounded px-5 focus:outline-0 text-sm w-full data-[invalid=true]:border-2 border-red-500 data-[invalid=true]:bg-[url('/images/icon-error.svg')] data-[invalid=true]:bg-no-repeat data-[invalid=true]:bg-[length-20px] data-[invalid=true]:bg-[position:calc(100%-14px)_center] pr-12" type="email" id="email" placeholder="Enter your email address" aria-describedby="error-message" aria-invalid="false">
-                            <p class="hidden rounded-b-md bg-red-500 px-3 py-2 text-[0.75rem] text-gray-50 italic text-start data-[show=true]:block" id="error-message">Whoops, make sure it's an email</p>
+                            <input class="bg-gray-50 text-gray-500 py-4 rounded px-5 focus:outline-0 text-sm w-full data-[invalid=true]:border-2 border-red-500 data-[invalid=true]:bg-[url('/images/icon-error.svg')] data-[invalid=true]:bg-no-repeat data-[invalid=true]:bg-[length-1.25rem] data-[invalid=true]:bg-[position:calc(100%-0.875rem)_center] pr-12" type="email" id="email" placeholder="Enter your email address" aria-describedby="error-message" aria-invalid="false">
+                            <p class="hidden rounded-b-md bg-red-500 px-3 py-2 text-[0.75rem] border-0 text-gray-50 italic text-start data-[show=true]:block" id="error-message">Whoops, make sure it's an email</p>
                         </div>
-                        <button type="submit" class="bg-red-500 text- text-gray-50 py-4 tracking-wide w-full border-0 hover:bg-gray-50 hover:border-2 border-red-500 hover:text-red-500 rounded">Contact Us</button>
+                        <button type="submit" class="bg-red-500 text-sm text-gray-50 py-4 tracking-wide w-full border-0 hover:bg-gray-50 hover:border-2 border-red-500 hover:text-red-500 rounded">Contact Us</button>
                     </div>
 
                 </form>

@@ -4,9 +4,6 @@
 @theme {
     --font-display: "Rubik", sans-serif;
 }
-/* button{
-    @apply block;
-} */
 
 img{
     @apply block;
@@ -28,7 +25,7 @@ img{
     @apply text-red-500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .nav__item{
         @apply border-t-0 py-0;
     }
@@ -39,52 +36,36 @@ img{
 }
 
 /* Features tab */
-.tab{
-    @apply relative border-t border-gray-300 py-4.5 text-gray-500 text-xl transition;
-}
-
-.tab.focus{
-    @apply border-0 outline-0;
-}
-
-.tab::after{
-    @apply absolute content-[""] bottom-0 w-36 -translate-x-1/2 left-1/2 h-1 bg-transparent;
-}
-
-.tab.active{
-    @apply text-gray-700;
-}
-.tab.active::after{
-    @apply bg-red-600;
-}
-
-.tabs{
-    @apply flex flex-col;
-}
-
-.tab__content{
-    @apply hidden;
-}
-
-.tab__content.active{
-    @apply block;
-}
-
-@media (min-width: 768px){
+@layer components{
     .tab{
-        @apply border-t-0 text-lg;
+        @apply relative border-t border-gray-300 py-4.5 text-gray-500 text-xl transition md:border-t-0 md:text-lg;
+    }
+
+    .tab.focus{
+        @apply border-0 outline-0;
     }
 
     .tab::after{
-        @apply w-full;
+        @apply absolute content-[""] bottom-0 w-36 -translate-x-1/2 left-1/2 h-1 bg-transparent md:w-full;
     }
 
-    .tab__content.active{
-        @apply flex justify-center items-center;
+    .tab.active{
+        @apply text-gray-700;
+    }
+    .tab.active::after{
+        @apply bg-red-600;
     }
 
     .tabs{
-        @apply flex-row justify-between items-center border-b border-gray-300 w-[80%] m-auto mt-10;
+        @apply flex flex-col md:flex-row md:justify-between md:items-center md:border-b md:border-gray-300 md:w-[40rem] md:m-auto md:mt-10;
+    }
+
+    .tab__content{
+        @apply hidden;
+    }
+
+    .tab__content.active{
+        @apply block md:flex md:items-center md:justify-center md:gap-12 md:max-w-[80rem] mx-auto;
     }
 }
 
@@ -126,14 +107,14 @@ img{
         z-index: -1;
     }
     
-    @media (min-width: 768px){
+    @media (min-width: 48rem){
         .hero__illustration{
             width: 50%;
             background: none;
         }
 
         .hero__illustration::before{
-            top: clamp(158px,4vw,80px);
+            top: clamp(9.875rem,4vw,5rem);
             left: 13vw;
             height: 23vw;
         }
@@ -151,7 +132,7 @@ img{
             z-index: 1;
         }
 
-        @media (min-width: 1024px){
+        @media (min-width: 64rem){
             .hero__illustration::before{
                 height: 25vw;
             }
@@ -161,38 +142,30 @@ img{
             }
         }
     }
-
-    /*  */
-    /* lg:order-2 */
 }
 
-@layer utilities{
+@layer components{
     .features__tab{
-        position: relative;
-        flex: 1;
+        @apply relative;
     }
 
     .features__tab::before{
         content: "";
         position: absolute;
-        top: clamp(66px,17vw,105px);
+        top: clamp(4.125rem,17vw,6.5625rem);
         right: 18vw;
         width: 100vw;
         height: 54vw;
-        max-height: 324px;
+        max-height: 18.75rem;
         z-index: -1;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 48rem){
         .features__tab::before{
-            top: 55px;
+            top: 3.4375rem;
             right: 12vw;
             height: 26vw;
-            max-height: 550px;
+            max-height: 23.75rem;
         }
     }
-}
-
-.features__tab{
-    @apply relative flex-1;
 }
