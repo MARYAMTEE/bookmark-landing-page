@@ -103,7 +103,7 @@ img{
 @layer utilities{
     .hero__illustration {
         position: relative;
-        background-image: url('/images/illustration-hero.svg');
+        background-image: url('../images/illustration-hero.svg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -142,7 +142,7 @@ img{
             content: "";
             top: 6.25rem;
             left: 0.6875rem;
-            background-image: url('/images/illustration-hero.svg');
+            background-image: url('../images/illustration-hero.svg');
             background-size: 100%;
             background-repeat: no-repeat;
             width: 100%;
